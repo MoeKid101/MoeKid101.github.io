@@ -1,0 +1,122 @@
+:root {
+    --menu-bar-width: 230px;
+    --info-avatar-size: 100px;
+    --info-bkg: #242424;
+    --menu-box-shadow: 2px 2px 5px rgba(0.3, 0.3, 0.3, 0.2);
+
+    --menu-icon-size: 25px;
+    --menu-item-padding: 0px 10px 0px 10px;
+    --menu-list-bkg: #FFFFFF;
+
+    --menu-border-color: rgba(0,0,0,0.2);
+    --menu-border-radius: 7px;
+
+    --main-bkg: #EEEDED;
+    --main-width: 1000px;
+}
+
+#container {
+    background-color: var(--main-bkg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main-container {
+    background-color: aqua;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: var(--menu-bar-width) 1fr;
+    grid-gap: 20px;
+    max-width: var(--main-width);
+    width: var(--main-width);
+}
+
+#menu {
+    margin: 10px;
+    width: var(--menu-bar-width);
+    display: flex;
+    flex-direction: column;
+}
+
+#menu > * {
+    box-shadow: var(--menu-box-shadow);
+    width: var(--menu-bar-width);
+    border: 1px solid;
+    border-color: var(--menu-border-color);
+    border-radius: var(--menu-border-radius);
+    margin-bottom: 7px;
+    margin-top: 7px;
+}
+
+#menuName {
+    background-color: var(--info-bkg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px 10px 0px;
+}
+
+#Avatar {
+    width: var(--info-avatar-size);
+    border-radius: 50%;
+    margin: 10px;
+}
+
+#UserName {
+    color: white;
+    font-size: 16px;
+}
+
+#menuList {
+    background-color: var(--menu-list-bkg);
+    list-style: none;
+    /* margin: 0px; */
+    padding: var(--menu-border-radius) 0px var(--menu-border-radius) 0px;
+}
+
+#menuList > .menuItem {
+    padding: var(--menu-item-padding);
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+#menuList > .menuItem > .menuIcon {
+    width: var(--menu-icon-size);
+    /* margin: 6px 0px 6px 0px; */
+}
+
+#menuList > .menuItem > .menuText {
+    display: block;
+    line-height: 35px;
+    margin-left: 10px;
+    font-size: 13px;
+    cursor: inherit;
+}
+
+#contaction {
+    background-color: var(--menu-list-bkg);
+}
+
+#title-contaction {
+    background-color: rgba(0,0,0,0.1);
+    border-radius: var(--menu-border-radius);
+    display: block;
+    padding: 5px;
+    text-align: center;
+    font-style: italic;
+    font-size: 10px;
+    cursor: default;
+}
+
+#content {
+    background-color: darkgray;
+    margin: 10px;
+    min-height: 3000px;
+}
+
+#main-interface {
+    width: 100%;
+    height: 100%;
+}
